@@ -45,7 +45,7 @@ function loop(t) {
 
   document.getElementById("hrs").style.display = ( st >= 3600 ) ? "block" : "none"
   document.getElementById("mins").style.display = ( st >= 60 ) ? "block" : "none"
-  document.getElementById("mins").innerText = `${( st >= 3600 && Math.floor( st / 60 ) % 60 < 10 ) ? "0"}${Math.floor(st/60)%60}`
+  document.getElementById("mins").innerText = `${( st >= 3600 && Math.floor( st / 60 ) % 60 < 10 ) ? "0" : ""}${Math.floor(st/60)%60}`
   document.getElementById("secs").innerText = `${( st >= 60 && st % 60 < 10 ) ? "0" : ""}${Math.floor(st)%60}`
   document.getElementById("punc1").innerText = `${( st >= 3600 ) ? ":" : ""}`
   document.getElementById("punc2").innerText = `${( st >= 60 ) ? ":" : ""}`
