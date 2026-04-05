@@ -16,6 +16,7 @@ BODY.appendChild((() => {
     let punc = document.createElement("span")
     punc.id = "punc1"
     punc.innerText = ":"
+    return punc
   })())
   time.appendChild((() => {
     let minutes= document.createElement("span")
@@ -26,6 +27,7 @@ BODY.appendChild((() => {
     let punc = document.createElement("span")
     punc.id = "punc2"
     punc.innerText = ":"
+    return punc
   })())      
   time.appendChild((() => {
     let seconds = document.createElement("span")
@@ -37,7 +39,7 @@ BODY.appendChild((() => {
 
 let st = 0
 let last = 0
-function loop(t) {
+function loop(time) {
   const delta = time - last;
   last = time
 
