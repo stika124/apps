@@ -25,4 +25,18 @@ function pack(name) {
     })())
     return line
   })())
+  document.body.appendChild((() => {
+    let body = document.createElement("div")
+    body.style.position = "absolute"
+    body.style.top = `${WD}px`
+    body.style.left = "0"
+    body.style.padding = "0"
+    body.appendChild((() => {
+      let bodY = document.createElement("div")
+      bodY.style.position = "relative"
+      bodY.style.id = "body"
+      return bodY
+    })())
+    return body
+  })())
 }
