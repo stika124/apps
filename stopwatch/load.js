@@ -1,4 +1,4 @@
-let BODY = document.getElementById("body")
+let BODY = document.body
 
 BODY.appendChild((() => {
   let time = document.createElement("div")
