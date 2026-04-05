@@ -4,8 +4,8 @@ function pack(name) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">`
-  document.documentElement.setProperty("font-family", "'Noto Sans JP', sans-serif")
-  document.documentElement.setProperty("font-weight", "900")
+  document.documentElement.style.setProperty("font-family", "'Noto Sans JP', sans-serif")
+  document.documentElement.style.setProperty("font-weight", "900")
   document.body.appendChild((() => {
     let line = document.createElement("div")
     line.style.position = "absolute"
