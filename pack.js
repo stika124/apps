@@ -6,6 +6,7 @@ function pack(name) {
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">`
   document.documentElement.style.fontFamily = "'Noto Sans JP', sans-serif"
   document.documentElement.style.fontWeight = "900"
+  document.documentElement.style.fontSize = "30px"
   document.body.appendChild((() => {
     let line = document.createElement("div")
     line.style.position = "absolute"
