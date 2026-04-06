@@ -33,7 +33,9 @@ function pack(name) {
     body.style.padding = "0"
     body.appendChild((() => {
       let bodY = document.createElement("div")
-      bodY.style.position = "relative"
+      bodY.style.width = "100vw";
+      bodY.style.position =  "relative";
+      bodY.style.height = `calc(100vh - ${WD}px)`
       bodY.id = "body"
       return bodY
     })())
