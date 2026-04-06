@@ -27,7 +27,7 @@ function pack(name, web) {
     line.appendChild((() => {
       let btn = document.createElement("div")
       btn.style.position = "absolute"
-      btn.style.top = "0"
+      btn.style.top = `${WD/2}px`
       btn.style.right = "50px"
       btn.style.transform = "translate(0, -50%)"
       btn.innerText = "Donate!"
