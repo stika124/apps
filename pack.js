@@ -1,4 +1,4 @@
-function pack(name) {
+function pack(name, web) {
   let WD = 100
   document.documentElement.innerHTML += `
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +23,16 @@ function pack(name) {
       text.style.transform = "translate(0, -50%)"
       text.innerText = name
       return text
+    })())
+    line.appendChild((() => {
+      let btn = document.createElement("div")
+      btn.style.position = "absolute"
+      btn.style.top = "0"
+      btn.style.right = "50px"
+      btn.style.transform = "translate(0, -50%)"
+      btn.innerText = "Donate!"
+      btn.onclick = () => donate(web)
+      return btn
     })())
     return line
   })())
