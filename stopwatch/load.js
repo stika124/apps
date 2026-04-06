@@ -42,8 +42,8 @@ function loop(time) {
 
   st += delta / 1000
 
-  document.getElementById("hrs").style.display = ( st >= 3600 ) ? "block" : "none"
-  document.getElementById("mins").style.display = ( st >= 60 ) ? "block" : "none"
+  document.getElementById("hrs").style.display = ( st >= 3600 ) ? "inline" : "none"
+  document.getElementById("mins").style.display = ( st >= 60 ) ? "inline" : "none"
   
   document.getElementById("hrs").innerText = `${Math.floor(st/3600)}`
   document.getElementById("mins").innerText = `${( st >= 3600 && Math.floor( st / 60 ) % 60 < 10 ) ? "0" : ""}${Math.floor(st/60)%60}`
