@@ -13,6 +13,7 @@ function pack(name) {
     line.style.left = "0"
     line.style.zIndex = "9999"
     line.style.height = `${WD}px`
+    line.style.width = "100vw"
     line.appendChild((() => {
       let text = document.createElement("div")
       text.style.position = "absolute"
