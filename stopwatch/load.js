@@ -1,4 +1,5 @@
-let BODY = document.body
+pack("Stopky")
+let BODY = document.getElementById("body")
 
 BODY.appendChild((() => {
   let time = document.createElement("div")
