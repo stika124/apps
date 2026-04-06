@@ -51,5 +51,6 @@ function loop(time) {
   document.getElementById("secs").innerText = `${( st >= 60 && st % 60 < 10 ) ? "0" : ""}${Math.floor(st)%60}`
   document.getElementById("punc1").innerText = `${( st >= 3600 ) ? ":" : ""}`
   document.getElementById("punc2").innerText = `${( st >= 60 ) ? ":" : ""}`
+  requestAnimationFrame(loop)
 }
 requestAnimationFrame(loop)
