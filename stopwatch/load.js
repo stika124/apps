@@ -1,4 +1,4 @@
-pack("Stopky")
+pack("Stopky", location.href)
 let BODY = document.getElementById("body")
 
 BODY.appendChild((() => {
