@@ -34,7 +34,7 @@ function pack(name) {
     body.appendChild((() => {
       let bodY = document.createElement("div")
       bodY.style.position = "relative"
-      bodY.style.id = "body"
+      bodY.id = "body"
       return bodY
     })())
     return body
