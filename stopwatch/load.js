@@ -43,7 +43,7 @@ function loop(time) {
   const delta = time - last;
   last = time
 
-  st += delta / 100
+  st += delta / 1000
 
   document.getElementById("hrs").style.display = ( st >= 3600 ) ? "block" : "none"
   document.getElementById("mins").style.display = ( st >= 60 ) ? "block" : "none"
