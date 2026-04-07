@@ -31,6 +31,11 @@ BODY.appendChild((() => {
     seconds.id = "secs"
     return seconds
   })())
+  time.appendChild((() => {
+    let milsecs = document.createElement("span")
+    milsecs.id = "ms"
+    return milsecs
+  })())
   return time
 })())
 
@@ -83,6 +88,7 @@ function loop(time) {
   document.getElementById("hrs").innerText = `${Math.floor(st/3600)}`
   document.getElementById("mins").innerText = `${( st >= 3600 && Math.floor( st / 60 ) % 60 < 10 ) ? "0" : ""}${Math.floor(st/60)%60}`
   document.getElementById("secs").innerText = `${( st >= 60 && st % 60 < 10 ) ? "0" : ""}${Math.floor(st)%60}`
+  document.getElementById("ms").innerText = `${( st % 1).toFixed(2)}`
   
   document.getElementById("punc1").innerText = `${( st >= 3600 ) ? ":" : ""}`
   document.getElementById("punc2").innerText = `${( st >= 60 ) ? ":" : ""}`
