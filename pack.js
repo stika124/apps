@@ -14,6 +14,7 @@ function pack(name, web) {
     line.style.left = "0"
     line.style.zIndex = "9999"
     line.style.height = `${WD}px`
+    line.style.borderBottom = "1px solid black"
     line.style.width = "100vw"
     line.appendChild((() => {
       let text = document.createElement("div")
