@@ -88,7 +88,7 @@ function loop(time) {
   document.getElementById("hrs").innerText = `${Math.floor(st/3600)}`
   document.getElementById("mins").innerText = `${( st >= 3600 && Math.floor( st / 60 ) % 60 < 10 ) ? "0" : ""}${Math.floor(st/60)%60}`
   document.getElementById("secs").innerText = `${( st >= 60 && st % 60 < 10 ) ? "0" : ""}${Math.floor(st)%60}`
-  document.getElementById("ms").innerText = `${parseInt( ( st % 1 ) * 100 ).toString().padStart("0", 2)}`
+  document.getElementById("ms").innerText = `${parseInt( ( st % 1 ) * 100 ).toString().padStart(2, "0")}`
   
   document.getElementById("punc1").innerText = `${( st >= 3600 ) ? ":" : ""}`
   document.getElementById("punc2").innerText = `${( st >= 60 ) ? ":" : ""}`
