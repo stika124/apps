@@ -52,7 +52,7 @@ BODY.appendChild((() => {
     return path
   })())
   return controlStPa
-}))
+})())
 BODY.appendChild((() => {
   let controlStop = document.createElement("div")
   controlStop.id = "controlStop"
