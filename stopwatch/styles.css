@@ -5,6 +5,9 @@
     font-size: 40px;
     color: gray
 }
+#ms {
+    font-size: 40px;
+}
 #time {
     position: absolute;
     top: 50%;
