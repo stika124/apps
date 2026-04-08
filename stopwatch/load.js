@@ -68,7 +68,7 @@ BODY.appendChild((() => {
 
 let st = 0
 let last = 0
-let mult = 1
+let mult = 0
 function loop(time) {
   const delta = time - last;
   last = time
