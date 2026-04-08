@@ -7,6 +7,8 @@ function pack(name, web) {
   document.documentElement.style.fontFamily = "'Noto Sans JP', sans-serif"
   document.documentElement.style.fontWeight = "900"
   document.documentElement.style.fontSize = "25px"
+  document.documentElement.style.setProperty("--white", "#f0f0f0")
+  document.documentElement.style.setProperty("--black", "#1f1f1f")
   document.body.appendChild((() => {
     let line = document.createElement("div")
     line.style.position = "absolute"
