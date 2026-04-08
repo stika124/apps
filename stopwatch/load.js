@@ -47,29 +47,21 @@ const svg = {
 BODY.appendChild((() => {
   let controlStPa = document.createElement("div")
   controlStPa.id = "controlStPa"
-  controlStPa.appendChild((() => {
-    let path = document.createElementNS("http://www.w3.org/2000/svg", "path")
-    path.setAttribute("d", svg.start)
-    path.onclick = () => {
-      mult = mult ? 0 : 1
-      path.setAttribute("d", mult ? svg.start : svg.pause)
-    }
-    return path
-  })())
+  controlStPa.onclick = () => {
+    mult = mult ? 0 : 1
+    controlStPa.innerText = mult ? "Stop" : "Start"
+  }
   return controlStPa
 })())
 BODY.appendChild((() => {
   let controlStop = document.createElement("div")
   controlStop.id = "controlStop"
-  controlStop.appendChild((() => {
-    let path = document.createElementNS("http://www.w3.org/2000/svg", "path")
-    path.setAttribute("d", svg.stop)
-    path.onclick = () => {
-      mult = 0
-      st = 0
-    }
-    return path
-  })())
+  controlStop.onclick = () => {
+    mult = 0
+    st = 0
+    controlStPa.innerText = "Start"
+  }
+  controlStop.innerText = "Stop"
   return controlStop
 })())
 
