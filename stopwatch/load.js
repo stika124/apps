@@ -45,16 +45,17 @@ const svg = {
   stop: "M 1,1 L 4,1 L 4,4 L 1,4 Z"
 }
 BODY.appendChild((() => {
-  let controlStPa = document.createElement("div")
+  let controlStPa = document.createElement("button")
   controlStPa.id = "controlStPa"
   controlStPa.onclick = () => {
     mult = mult ? 0 : 1
-    controlStPa.innerText = mult ? "Stop" : "Start"
+    controlStPa.innerText = mult ? "Pause" : "Start"
   }
+  controlStPa.innerText = "Start"
   return controlStPa
 })())
 BODY.appendChild((() => {
-  let controlStop = document.createElement("div")
+  let controlStop = document.createElement("button")
   controlStop.id = "controlStop"
   controlStop.onclick = () => {
     mult = 0
