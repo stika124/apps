@@ -37,6 +37,7 @@ body {
     border-radius: 10px;
     background: var(--white);
     border: 3px solid var(--black);
+    box-sizing: border-box;
 }
 #controlStop {
     width: 120px;
@@ -49,4 +50,5 @@ body {
     border-radius: 10px;
     background: var(--white);
     border: 3px solid var(--black);
+    box-sizing: border-box;
 }
